@@ -44,7 +44,7 @@ namespace MostFrequentWordsinFIles
                 }
                 frequencies[word] = freq;
             }
-
+            //d
             List<string> highestWords = frequencies.Where(x => x.Value == highestFreq).Select(x => x.Key).ToList();
             var highestWords5 = frequencies.Where(x => x.Value == highestFreq).Select(x => x.Key).ToList();
             List<KeyValuePair<string, int>> select10 = frequencies.OrderByDescending(key => key.Value).Take(10).ToList();
